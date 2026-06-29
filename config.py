@@ -30,10 +30,10 @@ MATCHED_BORDER_COLOR = (184, 151, 255)
 FONT_NAME = "verdana"
 
 IMAGE_SET_TITLES = {
-    "characters": "The boys",
+    "the boys": "The boys",
     "memes": "Memes",
-    "animals": "Jerk horse",
-    "set4": "Mister Ptiza",
-    "set5": "Platina disks",
-    "set6": "Dwayne Djonson",
+    "horse": "Jerk horse",
+    "bird": "Mister Ptiza",
+    "rnb": "Platina disks",
+    "dd": "Dwayne Djonson",
 }
