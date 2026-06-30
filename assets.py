@@ -3,7 +3,7 @@ import pygame
 from config import ASSETS_DIR, CARD_SIZE, IMAGE_SET_TITLES
 
 
-SUPPORTED_EXTENSIONS = (".png", ".jpg", ".jpeg", ".bmp", ".gif")
+SUPPORTED_EXTENSIONS = (".png", ".jpg", ".jpeg")
 
 
 def load_assets():

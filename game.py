@@ -15,7 +15,6 @@ from config import (
     IMAGE_SET_TITLES,
     MUTED_TEXT_COLOR,
     PANEL_COLOR,
-    PANEL_BORDER_COLOR,
     TEXT_COLOR,
     WINDOW_HEIGHT,
     WINDOW_WIDTH,
@@ -136,13 +135,12 @@ class Game:
 
     def _draw_win_message(self, surface):
         overlay = pygame.Surface(surface.get_size(), pygame.SRCALPHA)
-        overlay.fill((6, 4, 14, 172))
+        overlay.fill((20, 24, 36, 145))
         surface.blit(overlay, (0, 0))
 
         panel = pygame.Rect(0, 0, 620, 300)
         panel.center = (WINDOW_WIDTH // 2, WINDOW_HEIGHT // 2 - 40)
         pygame.draw.rect(surface, PANEL_COLOR, panel, border_radius=32)
-        pygame.draw.rect(surface, PANEL_BORDER_COLOR, panel, width=2, border_radius=32)
 
         title = self.win_font.render("Победа!", True, TEXT_COLOR)
         surface.blit(title, title.get_rect(center=(panel.centerx, panel.y + 92)))
@@ -152,4 +150,4 @@ class Game:
 
         self.restart_button.draw(surface)
         self.menu_button.draw(surface)
-        self.exit_button.draw(surface)
+
